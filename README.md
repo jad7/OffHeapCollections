@@ -2,8 +2,8 @@ OffHeapCollections
 ==================
 
 One of implemenatation off-heap collections, based on java.util.HashMap
-Map:
-{
+Map:<code>
+
     public class SimpleUsage {
 
         @Test
@@ -74,6 +74,4 @@ Map:
             }
         }
     }
-
-
-}
+    </code>
