@@ -1,3 +1,5 @@
+package com.jad.offheap.collections.impl;
+
 import com.jad.offheap.collections.impl.OffHeapHashMap;
 import com.jad.offheap.collections.serializer.Serializers;
 import org.apache.commons.lang.RandomStringUtils;
@@ -11,7 +13,7 @@ import java.util.Map;
  * @since: 12/15/13
  */
 
-public class SimpleUsage {
+public class SimpleUsageMap {
 
     @Test
     public void simpleTest() {
