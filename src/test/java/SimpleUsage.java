@@ -1,7 +1,15 @@
-OffHeapCollections
-==================
+import com.jad.offheap.collections.impl.OffHeapHashMap;
+import com.jad.offheap.collections.serializer.Serializers;
+import org.apache.commons.lang.RandomStringUtils;
+import org.testng.annotations.Test;
 
-One of implemenatation off-heap collections
+import java.io.Serializable;
+import java.util.Map;
+
+/**
+ * @author: Ilya Krokhmalyov YC14IK1
+ * @since: 12/15/13
+ */
 
 public class SimpleUsage {
 
