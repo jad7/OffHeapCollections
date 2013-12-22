@@ -550,9 +550,8 @@ public class OffHeapHashMap<K, V> extends AbstractMap<K,V>
 
         while (e > 0) {
             long next = getNext(e);
-            Object k;
             if (getHash(e) == hash &&
-                    ((k = getKey(e)) == key || (key != null && key.equals(k)))) {
+                    (key != null && key.equals(getKey(e)))) {
                 modCount++;
                 size--;
                 if (prev == e) {
@@ -914,7 +913,7 @@ public class OffHeapHashMap<K, V> extends AbstractMap<K,V>
     }
 
     Entry getEntryAtPosition(int tabPosition, int num) {
-        if (tabPosition > 0 && tabPosition < tableLength) {
+        if (tabPosition >= 0 && tabPosition < tableLength) {
             long ret = getFromTable(tabPosition);
             while (ret > 0 && num-- > 0) {
                 ret = getNext(ret);

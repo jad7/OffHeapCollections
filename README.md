@@ -2,7 +2,8 @@ OffHeapCollections
 ==================
 
 One of implemenatation off-heap collections, based on java.util.HashMap
-Map:<code>
+Map:
+<code>
 
     public class SimpleUsage {
 
